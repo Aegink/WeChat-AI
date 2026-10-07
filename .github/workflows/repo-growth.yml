@@ -14,6 +14,7 @@ concurrency:
 
 jobs:
   update:
+    if: github.repository_owner == 'SMNETSTUDIO'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
